@@ -1,0 +1,164 @@
+[
+  {
+    "id": "S001",
+    "name": "National Means-cum-Merit Scholarship (NMMS)",
+    "domain": "Education",
+    "min_age": 13,
+    "max_age": 16,
+    "categories": ["General", "SC", "ST", "OBC", "EWS"],
+    "max_income": 350000,
+    "education_level": ["Class 9", "Class 10"],
+    "states": ["All"],
+    "disability_required": false,
+    "gender": "Any",
+    "documents": [
+      "Income certificate",
+      "Caste certificate (if applicable)",
+      "School enrollment proof",
+      "Aadhaar card",
+      "Bank account passbook"
+    ],
+    "apply_link": "https://scholarships.gov.in",
+    "apply_steps": [
+      "Register on the National Scholarship Portal (NSP) with Aadhaar-linked mobile number",
+      "Fill the NMMS application under 'Fresh Registration'",
+      "Upload income certificate and caste certificate (if applicable)",
+      "Submit and note the application ID for tracking",
+      "School verifies the application before final approval"
+    ]
+  },
+  {
+    "id": "S002",
+    "name": "Post-Matric Scholarship for SC Students",
+    "domain": "Education",
+    "min_age": 16,
+    "max_age": 30,
+    "categories": ["SC"],
+    "max_income": 250000,
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate", "Diploma"],
+    "states": ["All"],
+    "disability_required": false,
+    "gender": "Any",
+    "documents": [
+      "Caste certificate",
+      "Income certificate",
+      "Previous year mark sheet",
+      "Bonafide student certificate",
+      "Aadhaar card"
+    ],
+    "apply_link": "https://scholarships.gov.in",
+    "apply_steps": [
+      "Register on NSP as a fresh applicant",
+      "Select 'Post-Matric Scholarship - SC' scheme",
+      "Upload caste and income certificates",
+      "Fill institution and course details",
+      "Submit for institute verification"
+    ]
+  },
+  {
+    "id": "S003",
+    "name": "Post-Matric Scholarship for OBC Students",
+    "domain": "Education",
+    "min_age": 16,
+    "max_age": 30,
+    "categories": ["OBC"],
+    "max_income": 150000,
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate", "Diploma"],
+    "states": ["All"],
+    "disability_required": false,
+    "gender": "Any",
+    "documents": [
+      "OBC (non-creamy layer) certificate",
+      "Income certificate",
+      "Previous year mark sheet",
+      "Bonafide student certificate",
+      "Aadhaar card"
+    ],
+    "apply_link": "https://scholarships.gov.in",
+    "apply_steps": [
+      "Register on NSP as a fresh applicant",
+      "Select 'Post-Matric Scholarship - OBC' scheme",
+      "Upload OBC non-creamy layer certificate and income certificate",
+      "Fill institution and course details",
+      "Submit for institute verification"
+    ]
+  },
+  {
+    "id": "S004",
+    "name": "Pragati Scholarship for Girls (AICTE)",
+    "domain": "Education",
+    "min_age": 16,
+    "max_age": 35,
+    "categories": ["General", "SC", "ST", "OBC", "EWS"],
+    "max_income": 800000,
+    "education_level": ["Diploma", "Undergraduate"],
+    "states": ["All"],
+    "disability_required": false,
+    "gender": "Female",
+    "documents": [
+      "Income certificate",
+      "Admission proof in technical course",
+      "Aadhaar card",
+      "Bank account passbook"
+    ],
+    "apply_link": "https://www.aicte-pragati-saksham-gov.in",
+    "apply_steps": [
+      "Register on the AICTE Pragati/Saksham portal",
+      "Fill personal and institution details",
+      "Upload admission letter and income certificate",
+      "Submit and track status via portal login"
+    ]
+  },
+  {
+    "id": "S005",
+    "name": "Saksham Scholarship for Differently-Abled Students",
+    "domain": "Education",
+    "min_age": 16,
+    "max_age": 35,
+    "categories": ["General", "SC", "ST", "OBC", "EWS"],
+    "max_income": 800000,
+    "education_level": ["Diploma", "Undergraduate"],
+    "states": ["All"],
+    "disability_required": true,
+    "gender": "Any",
+    "documents": [
+      "Disability certificate (40% or above)",
+      "Income certificate",
+      "Admission proof in technical course",
+      "Aadhaar card"
+    ],
+    "apply_link": "https://www.aicte-pragati-saksham-gov.in",
+    "apply_steps": [
+      "Register on the AICTE Pragati/Saksham portal",
+      "Upload disability certificate issued by competent authority",
+      "Upload admission letter and income certificate",
+      "Submit and track status via portal login"
+    ]
+  },
+  {
+    "id": "S006",
+    "name": "Central Sector Scheme of Scholarship for College Students",
+    "domain": "Education",
+    "min_age": 17,
+    "max_age": 25,
+    "categories": ["General", "SC", "ST", "OBC", "EWS"],
+    "max_income": 450000,
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "states": ["All"],
+    "disability_required": false,
+    "gender": "Any",
+    "documents": [
+      "Class 12 mark sheet (above 80 percentile)",
+      "Income certificate",
+      "College bonafide certificate",
+      "Aadhaar card"
+    ],
+    "apply_link": "https://scholarships.gov.in",
+    "apply_steps": [
+      "Register on NSP as fresh applicant",
+      "Select Central Sector Scheme",
+      "Upload Class 12 marksheet and income certificate",
+      "Submit for college verification"
+    ]
+  }
+]

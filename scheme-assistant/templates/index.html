@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scheme Setu — Find your government schemes</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="28" height="28">
+            <path d="M8 21 L16 29 L32 11" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Scheme Setu</span>
+      </div>
+      <p class="tagline">A bridge to the benefits you already qualify for</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="intro" class="intro">
+      <h1>Find out which government schemes you're eligible for</h1>
+      <p>Answer a few questions about yourself. We'll match you against real scheme
+         criteria and show exactly what you need to apply — no guesswork.</p>
+    </section>
+
+    <section id="form-section" class="card">
+      <form id="eligibility-form">
+
+        <div class="field-row">
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="100" required>
+          </div>
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">Select</option>
+              <option value="General">General</option>
+              <option value="OBC">OBC</option>
+              <option value="SC">SC</option>
+              <option value="ST">ST</option>
+              <option value="EWS">EWS</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="income">Annual family income (₹)</label>
+            <input type="number" id="income" name="income" min="0" placeholder="e.g. 250000" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="education_level">Current education level</label>
+            <select id="education_level" name="education_level" required>
+              <option value="">Select</option>
+              <option value="Class 9">Class 9</option>
+              <option value="Class 10">Class 10</option>
+              <option value="Class 11">Class 11</option>
+              <option value="Class 12">Class 12</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Postgraduate">Postgraduate</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="state">State / UT</label>
+            <input type="text" id="state" name="state" placeholder="e.g. Uttar Pradesh" required>
+          </div>
+        </div>
+
+        <div class="field-row single">
+          <label class="checkbox-row">
+            <input type="checkbox" id="has_disability" name="has_disability">
+            <span>I have a valid disability certificate (40% or above)</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">Check my eligibility</button>
+      </form>
+    </section>
+
+    <section id="results-section" class="results" hidden>
+      <div class="results-header">
+        <h2>Your results</h2>
+        <button id="edit-btn" class="btn-ghost">Edit my details</button>
+      </div>
+
+      <div id="eligible-list" class="scheme-list"></div>
+
+      <div id="close-wrap" hidden>
+        <h3 class="close-heading">Close matches</h3>
+        <p class="close-sub">You're near the criteria for these — see what's missing.</p>
+        <div id="close-list" class="scheme-list"></div>
+      </div>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <p>No matching schemes found in our current database for this profile.
+           This demo covers a curated set of education schemes — a production
+           version would check against the full national scheme database.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <template id="scheme-card-template">
+    <article class="scheme-card">
+      <div class="scheme-card-top">
+        <h3 class="scheme-name"></h3>
+        <span class="scheme-score"></span>
+      </div>
+      <ul class="reasons-list"></ul>
+      <ul class="missing-list"></ul>
+      <button class="btn-secondary toggle-steps" type="button">How to apply</button>
+      <div class="steps-panel" hidden>
+        <h4>Required documents</h4>
+        <ul class="documents-list"></ul>
+        <h4>Application steps</h4>
+        <ol class="steps-list"></ol>
+        <a class="apply-link" target="_blank" rel="noopener">Go to application portal →</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
