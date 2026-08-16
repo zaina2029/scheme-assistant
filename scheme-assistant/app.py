@@ -1,4 +1,4 @@
-git from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify
 from eligibility import get_eligible_schemes
 
 app = Flask(__name__)
